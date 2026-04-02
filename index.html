@@ -14,7 +14,8 @@
     w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
     var e=ttq._i[t],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
     ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D7778UBC77UF299TTODG');
+
+    ttq.load('D777GE3C77U88469GHVG');
     ttq.page();
   }(window, document, 'ttq');
   </script>
@@ -36,7 +37,6 @@
       padding: 40px 20px 60px;
     }
 
-    /* ── ヘッダー ── */
     .header {
       text-align: center;
       margin-bottom: 32px;
@@ -45,12 +45,6 @@
     .header-emoji {
       font-size: 4rem;
       margin-bottom: 12px;
-      
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
     }
 
     .header h1 {
@@ -69,7 +63,6 @@
       font-weight: 500;
     }
 
-    /* ── メインカード ── */
     .main-card {
       background: #ffffff;
       border-radius: 24px;
@@ -80,8 +73,6 @@
       position: relative;
       overflow: hidden;
     }
-
-
 
     .main-card .badge {
       display: inline-block;
@@ -147,7 +138,6 @@
       margin-top: 12px;
     }
 
-    /* ── ステップ ── */
     .steps {
       display: flex;
       gap: 12px;
@@ -183,7 +173,6 @@
     .step-icon { font-size: 1.6rem; margin-bottom: 8px; }
     .step-text { font-size: 0.75rem; font-weight: 700; color: #555; line-height: 1.5; }
 
-    /* ── キャンペーンの仕組み ── */
     .campaign-section {
       margin-bottom: 24px;
     }
@@ -224,7 +213,6 @@
       line-height: 1.8;
     }
 
-    /* ── 法的情報 ── */
     .legal-section {
       margin-top: 32px;
     }
@@ -257,7 +245,6 @@
       margin-top: 8px;
     }
 
-    /* ── フッター ── */
     .footer {
       text-align: center;
       margin-top: 40px;
@@ -280,7 +267,7 @@
       <h2>公式LINEを追加して<br><span class="highlight">プレゼント</span>をGETしよう！</h2>
       <p class="desc">友だち追加するだけでキャンペーンに<br>自動エントリーされます🎉</p>
 
-      <a class="btn-line" href="https://lin.ee/RBplkFr" id="lineBtn" onclick="handleClick()">
+      <a class="btn-line" href="https://lin.ee/RBplkFr" onclick="handleClick(event)">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 2C6.48 2 2 6.02 2 11c0 3.07 1.63 5.79 4.14 7.5L5.5 22l3.86-1.93C10.38 20.34 11.18 20.5 12 20.5c5.52 0 10-4.02 10-9S17.52 2 12 2z" fill="white"/>
           <path d="M17.5 13.5h-2v-4h2v4zm-3.5 0h-2v-4h2v4zm-3.5 0h-2v-4h2v4z" fill="#06C755"/>
@@ -329,7 +316,7 @@
 
     <div class="main-card">
       <h2>今すぐ<span class="highlight">友だち追加</span>して<br>キャンペーンに参加しよう！</h2>
-      <a class="btn-line" href="https://lin.ee/RBplkFr" onclick="handleClick()">
+      <a class="btn-line" href="https://lin.ee/RBplkFr" onclick="handleClick(event)">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 2C6.48 2 2 6.02 2 11c0 3.07 1.63 5.79 4.14 7.5L5.5 22l3.86-1.93C10.38 20.34 11.18 20.5 12 20.5c5.52 0 10-4.02 10-9S17.52 2 12 2z" fill="white"/>
           <path d="M17.5 13.5h-2v-4h2v4zm-3.5 0h-2v-4h2v4zm-3.5 0h-2v-4h2v4z" fill="#06C755"/>
@@ -344,7 +331,7 @@
         <h2>【特定商取引法に基づく表記・運営者情報】</h2>
         <p>・事業者名: 株式会社ワンカラット</p>
         <p>・所在地: 〒150-0044 東京都渋谷区円山町20-1 新大宗道玄坂上ビル</p>
-        <p>・お問い合わせ: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9cfc8cfc0c1c0c7c8e9c1c8c4c1c8c487dcc2">[email&#160;protected]</a></p>
+        <p>・お問い合わせ: fafihina@hamham.uk</p>
         <p class="note">※お電話でのお問い合わせは受け付けておりません。上記メールまでご連絡ください。</p>
       </div>
 
@@ -361,4 +348,17 @@
 
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clo
+  <script>
+    function handleClick(e) {
+      e.preventDefault();
+      var url = e.currentTarget.href;
+      if (window.ttq) {
+        ttq.track('Contact', { content_name: 'LINE Add Friend' });
+      }
+      setTimeout(function() {
+        window.location.href = url;
+      }, 300);
+    }
+  </script>
+</body>
+</html>
